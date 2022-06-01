@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 * {
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #24252a;
+    color: #edf0f1;
 }
 
 li, a, button {
@@ -59,12 +61,43 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
+/* showcase */
+
+.hero-div {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.hero-main p, button{
+    margin: 20px;
+    margin-left: 0;
+}
 
 
+/* cards */
 
+.toppings-div {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 30px;
+}
 
+.toppings-info {
+    margin: 0px auto;
+}
 
-
+.toppings-div .pizzas{
+    display: flex;
+    justify-content: space-around;
+}
 
 footer {
     height: 75px;
