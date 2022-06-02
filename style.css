@@ -5,15 +5,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
-    color: #edf0f1;
+    color: black;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: black;
     text-decoration: none;
 }
 
@@ -21,7 +22,11 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
+}
+
+header .order {
+    margin-left: 1.5em;
 }
 
 .logo {
@@ -36,7 +41,7 @@ header {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 27px;
 }
 
 .nav-links li a {
@@ -44,21 +49,22 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #0088a9;
+    color: #6f6f6f;
 }
 
 button {
-    margin-left: 20px;
+    margin-right: 20px;
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
+    background-color: #ced4da;
+    border: 3px solid #adb5bd;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: #adb5bd;
+    color: white;
 }
 
 /* showcase */
@@ -66,42 +72,120 @@ button:hover {
 .hero-div {
     display: flex;
     margin: auto;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
     width: 80%;
-    margin-top: 25px;
+    height: 325px;
+    margin-top: 20px;
 }
 
-.hero-main p, button{
+.hero-main p,
+button {
     margin: 20px;
     margin-left: 0;
 }
 
+.hero-img img {
+    width: 475px;
+    height: 275px;
+    object-fit: cover;
+    object-position: 70% 30%;
+    border: 4px solid black;
+}
 
 /* cards */
 
 .toppings-div {
     display: flex;
-    margin: auto;
     flex-direction: column;
-    align-content: space-around;
-    justify-content: space-evenly;
-    width: 80%;
-    margin-top: 30px;
+    align-items: center;
+    padding: 3em 13em;
+    margin-top: 3em;
+    background-color: #adb5bd;
 }
 
-.toppings-info {
-    margin: 0px auto;
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
 }
 
-.toppings-div .pizzas{
-    display: flex;
-    justify-content: space-around;
-}
-
-footer {
-    height: 75px;
+.pizzas {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 6em;
+    padding: 2em;
+
+}
+
+.pizza-toppings img {
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 150px;
+
+}
+
+.pizza-toppings:hover {
+    opacity: 0.3;
+}
+
+/* Quote */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dee2e6;
+    padding: 120px 100px;
+}
+
+.quote p {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #495057;
+}
+
+.quote em {
+    font-size: 36px;
+    font-weight: 100;
+    color: #495057;
+}
+
+/* Sign up */
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #dee2e6;
+    border: 8px solid #ced4da;
+}
+
+.sign-up-left p,
+strong {
+    font-size: 24px;
+    color: black;
+}
+
+/* footer */
+
+footer {
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
 }
